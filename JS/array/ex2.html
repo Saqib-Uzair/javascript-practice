@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest element in array</title>
+</head>
+<body>
+    <h2>Largest element in the array</h2>
+    <h3>nums = [1,2,4,5,3];</h3>
+    <p id="demo"></p>
+    <script>
+        const nums = [1,2,4,5,3];
+        let maximum = nums[0];
+
+        for (let i=0; i < nums.length; i ++){
+
+            if (nums[i] > maximum){
+                maximum = nums[i];
+            }
+        }
+        document.getElementById("demo").innerHTML = maximum;
+
+    </script>
+</body>
+</html>
