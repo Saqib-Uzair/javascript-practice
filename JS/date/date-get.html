@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Get Methods</title>
+</head>
+<body>
+    <h1>This is the get method date</h1>
+    <p>All the get methods practice</p>
+    <p id="demo"></p>
+
+    <script>
+
+        const date = new Date();
+        let getYear = date.getFullYear()
+        let getMonth = date.getMonth();
+        let getDate = date.getDate();
+        let getDay = date.getDay();
+        let getHours = date.getHours();
+        let getMinutes = date.getMinutes();
+        let getSeconds = date.getSeconds();
+        let getMilliseconds = date.getMilliseconds();
+        let getTime = date.getTime();
+
+        document.getElementById("demo").innerHTML = getTime;
+
+
+    </script>
+</body>
+</html>
