@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript static and inheritance</title>
+</head>
+<body>
+    <h1>Javascript static and inheritance</h1>
+    <p>This exercise on the static and inheritance</p>
+    <p id="demo"></p>
+
+    <script>
+
+        class MathUtils {
+
+            static square(x){
+                return x ** 2;
+            }
+        }
+
+        class AdvanceMath extends MathUtils{
+
+            static cube(x){
+                return x ** 3;
+            }
+        }
+
+        const opt = new AdvanceMath();
+        document.getElementById("demo").innerHTML = AdvanceMath.cube(5);
+
+    </script>
+</body>
+</html>

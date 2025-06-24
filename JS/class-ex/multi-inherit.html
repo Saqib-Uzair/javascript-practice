@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript inheritance</title>
+</head>
+<body>
+    <h1>Multiple inheritance</h1>
+    <p>Multiple level of inheritance</p>
+    <p id="demo"></p>
+
+    <script>
+
+        class Person{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+
+        }
+
+        class Employee extends Person{
+            constructor(name, age, company, salary){
+                super(name, age);
+                this.company = company;
+                this.salary = salary;
+            }
+        }
+
+        class Manager extends Employee{
+            constructor(name, age, company, salary, teamSize){
+                super(name, age, company, salary);
+                this.teamSize = teamSize;
+            }
+        }
+
+        const emp = new Manager("saqib", 25, "IBEX", 1000, 100);
+        document.getElementById("demo").innerHTML = emp.teamSize;
+        
+    </script>
+</body>
+</html>

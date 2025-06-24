@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class</title>
+</head>
+<body>
+    <h1>Javascript class</h1>
+    <p>Creating the class method example</p>
+    <p id="demo"></p>
+
+    <script> 
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+
+            age(x){
+                return x - this.year;
+            }
+        }
+
+        const car = new Car("Vido", 2020);
+        const date = new Date();
+        let year = date.getFullYear()
+        document.getElementById("demo").innerHTML = "My car is " + car.age(year)+ " years old";
+
+    </script>
+</body>
+</html>

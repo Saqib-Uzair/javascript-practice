@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript exercise</title>
+</head>
+<body>
+    
+    <h1>Basic Protype chain</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        class Vehicle {
+            constructor(make, model){
+                this.make = make;
+                this.model = model;
+            }
+            
+        }
+        class Car extends Vehicle {
+            constructor(make, model, numWheels){
+                super(make,model);
+                this.numWheels = numWheels;
+            }
+        }
+
+        const myObj = new Car("make", "model","numWheels");
+        document.getElementById("demo").innerHTML = myObj.make;
+    </script>
+</body> 
+</html>
